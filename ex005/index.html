@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 10 </title>
+    <style>
+        .area1{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            font-size: 20pt;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area" class="area1" >
+        Interaja..
+    </div>
+    <script>
+            var a = window.document.querySelector('.area1')
+            a.addEventListener( 'click' , clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout' , sair)
+            
+        function clicar(){
+          
+            a.innerHTML = " voce clicou"
+          
+        }
+        function entrar(){
+           
+            a.innerHTML = ' vc esta dentro '
+            a.style.background = 'red'
+        }
+        function sair (){
+            a.style.background = 'green'
+            a.innerHTML = 'voce saiu !!'
+           
+        }
+
+
+    </script>
+    
+</body>
+</html>
