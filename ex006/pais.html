@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,39 @@
 </head>
 <body>
     <input type="text" name="" id="pais">
-    <input type="button" value="Entar" onclick="cLicar()"
+    <input type="button" value="Entar" onclick="clicar()">
+    <div id="res">
+        
+    </div>
+    
+
+    <script>
+        
+        var res = document.querySelector('#res')
+        function clicar(){
+            var pais = document.querySelector('#pais').value
+            var v1 = String(pais)
+       
+            if(v1==="br"){
+                res.innerHTML = 'Voce é brasileiro '
+
+            }
+            else{
+                res.innerHTML='estrangeiro'
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+    
 
 
     
