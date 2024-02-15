@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de idade</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(58, 58, 179);
+        }
+        main{
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-color: aliceblue;
+            padding: 20px;
+            padding-top: 50px;
+            border-radius: 20px;
+            box-shadow: 6px 4px 10px black;            
+        }
+        section{
+            padding: 20px;
+        }
+        header {
+            margin: auto;
+            width: 20%;
+            padding: 30px;
+            color: rgb(255, 255, 255);
+        }
+        #img{
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 60%;
+        }
+        #mae{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+
+        }
+        #mae2{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+
+        }
+        #res{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Contador de idades</h1>
+    </header>
+    <main>
+        <form action="" >
+
+            <section>
+
+                <label for="ano">Ano de nascimeto </label>
+                
+                <input type="text" name="iano"id="ano" required>
+
+            </section>
+
+            <section>
+                Sexo:   
+                <input type="radio" name="radio" id="radio" required>
+
+                <label for="radio">Masculino</label>
+
+                <input type="radio" name="radio" id="fradio" required>
+
+                <label for="fradio">Feminino</label>
+            </section>
+
+                <div id="mae2"><!-- DIV feita apenas pra estilos CSS e alinhar P filho -->
+                    <p id="res">sadsa</p>
+                </div> <!--Local onde exbir os anos e se for homem ou mulher -->
+
+                <div id="mae"> <!-- DIV feita apenas pra estilos CSS e alinhar IMG filha -->
+                    
+                    <img src="" alt="" id="img"> <!--Local onde a img vai ser colocada-->
+                </div>
+
+            <section>
+
+                <input type="button" value="Verificar" onclick="clicar()">
+
+            </section>
+            <div id="res">
+
+            </div>
+        </form>
+    </main>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
