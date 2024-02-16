@@ -25,8 +25,8 @@ function clicar(){
     }
     else{
         res.innerHTML='Selecione um sexo '
-} if (genero = 'Mulher'){
-    img.setAttribute('src' , 'img/criança.jpg')
+} if (genero === 'Mulher'){
+    img.setAttribute('src' , 'img/mulher.jpg')
 }
    
     if(idade >=0 && idade < 8){
